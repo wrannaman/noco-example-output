@@ -1,0 +1,12 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/seismic-trail-221522/noco-apps/5e443c238d2c4b00190ca350-app:dev', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/seismic-trail-221522/noco-apps/5e443c238d2c4b00190ca350-app:dev']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run', 'deploy', 'noco-apps-5e443c238d2c4b00190ca350-app-dev', '--image', 'gcr.io/seismic-trail-221522/noco-apps/5e443c238d2c4b00190ca350-app:dev', '--region', 'us-central1', '--add-cloudsql-instances', 'seismic-trail-221522:us-central1:noco-dev', '--max-instances', '5', '--concurrency', '80', '--platform', 'managed', '--allow-unauthenticated']
+images:
+       - gcr.io/seismic-trail-221522/noco-apps/5e443c238d2c4b00190ca350-app:dev

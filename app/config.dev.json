@@ -1,0 +1,18 @@
+
+    {
+      "api": "https://noco-apps-5e443c238d2c4b00190ca350-api-dev-iqwznvcybq-uc.a.run.app",
+      "auth0Config": {
+        "redirectUrl": "https://noco-apps-5e443c238d2c4b00190ca350-app-dev-iqwznvcybq-uc.a.run.app/callback",
+        "clientId": "",
+        "domain": "",
+        "name": "6/21/20 test",
+        "logo": "https://s3.wasabisys.com/noco-prod-5e443c238d2c4b00190ca350/2000b260-a97f-46e3-b2ed-3a34664e27c4.png",
+        "primaryColor": "#f44685"
+      },
+      "stripe": "",
+      "s3": {
+        "bucket": ""
+      },
+      "google_maps": ""
+    }
+    
