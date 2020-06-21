@@ -1,0 +1,23 @@
+{
+  "port": 3030,
+  "database": {
+    "dialect": "mysql",
+    "user": "",
+    "password": "",
+    "host": "",
+    "database": "",
+    "port": ""
+  },
+
+  "default_from_email": "hello@noco.io",
+  "sendgrid": "",
+  "s3": {
+    "key": "",
+    "secret": "",
+    "bucket": "",
+    "region": "us-west-1",
+    "s3ForcePathStyle": true,
+    "signatureVersion": "v4",
+    "endpoint": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "6/21/20-test",
+  "version": "0.0.1",
+  "description": "API (6/21/20 test)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export ENV=dev && nodemon index.js --ignore swagger.json --ignore *.json",
+    "start": "export ENV=prod && node index.js",
+    "test": "mocha './test/**/*' --timeout 20000 --exit",
+    "docs": "swagger-inline \"./controllers/**/*.js\" --base ./swagger.json --out ./swagger.json"
+  },
+  "author": "NoCo <hello@noco.io>",
+  "license": "",
+  "dependencies": {
+    "@alt3/sequelize-to-json-schemas": "^0.3.30",
+    "@sendgrid/mail": "^6.4.0",
+    "aws-sdk": "^2.578.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mysql2": "^2.0.0",
+    "random-number-csprng": "^1.0.2",
+    "sequelize": "^5.21.2",
+
+
+    "swagger-inline": "^1.0.5",
+    "swagger-ui-dist": "^3.24.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "chai-arrays": "^2.0.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^6.2.2",
+    "moment": "^2.24.0",
+    "prettier": "^1.14.3",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2",
+    "uuid": "^3.3.3"
+  }
+}
