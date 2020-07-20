@@ -1,20 +1,30 @@
-# noco-example-output
 
-This is an example output from the (NoCo platform)[https://noco.io]
+# 6/21/20 test
 
-the api is under the subfolder `api`
+- Hi there, here's your beautiful new api.
 
-# To start the api 
-```
-cd api
-# Please make sure you have a sql instance to connect to! It's set up for mysql out of the box. 
-npm i
-npm run dev
+
+## Start
+
+```js
+npm install && npm run docs && npm run dev
 ```
 
-# To start the app 
+## Test
+
+```js
+npm run test
 ```
-cd app
-npm i
-npm run dev
-```
+
+## Swagger
+
+visit [http://localhost:3030](http://localhost:3030) to see your docs!
+
+## Build
+
+docker build -t your_image:prod .
+
+
+## Configs
+
+your database connection is in *config.json*. Should you need to, you can change the connection info there.

@@ -1,5 +1,0 @@
-
-# NOCO APP
-
-NextJS
-
