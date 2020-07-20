@@ -27,4 +27,4 @@ docker build -t your_image:prod .
 
 ## Configs
 
-your database connection is in *config.json*. Should you need to, you can change the connection info there.
+your database connection is in *config.json*
